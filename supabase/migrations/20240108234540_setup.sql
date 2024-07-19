@@ -51,7 +51,7 @@ SECURITY DEFINER
 AS $$
 DECLARE
   project_url TEXT := 'https://chatbot-ui-h.vercel.app/';
-  service_role_key TEXT := 'DWz6Z8IFmlsquJ9mxcSRu0oGUHFbFBPXLEsKFejY3oO3KGbuL3EuhYJpaHaqECuzBvbNZXq4+Nv08pLdBeeObg=='; -- full access needed for http request to storage
+  service_role_key TEXT := 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJvb3FndW1wdWxydnFpcW96dG5tIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcyMTM3NTEyNywiZXhwIjoyMDM2OTUxMTI3fQ.2QZ3g_DNJO_6O7feH_U4bmBQMHP1MyMvsuFV3clji6k'; -- full access needed for http request to storage
   url TEXT := project_url || '/storage/v1/object/' || bucket || '/' || object;
 BEGIN
   SELECT
